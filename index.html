@@ -1,0 +1,4912 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the website responsive on mobiles and tablets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Roshan Jayathilakage | Engineering Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+</head>
+<!-- =========================================================
+     STICKY NAVIGATION BAR
+========================================================== -->
+<nav class="navbar portfolio-navbar sticky-top">
+
+    <div class="container">
+
+        <!-- Name / Brand -->
+        <a class="navbar-brand fw-bold" href="#home">
+                <span class="nav-name">
+                Roshan Jayathilakage
+                </span>
+
+                <span class="nav-credentials">
+               (PhD | B.Sc(Hons.) | MIEAust | MIET)
+                </span>
+        </a>
+
+
+        <!-- Navigation Links -->
+        <ul class="nav portfolio-nav ms-auto">
+
+            <li class="nav-item">
+                <a class="nav-link" href="#about">
+                    About
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">
+                    Projects
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#skills">
+                    Skills
+                </a>
+            </li>
+
+            <li class="nav-item">
+            <a class="nav-link" href="#publications-grants">
+            Publications
+            </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link contact-nav-link" href="#contact">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</nav>
+<!-- END STICKY NAVIGATION BAR -->
+
+<body class="bg-white text-dark">
+
+    <!-- =========================================================
+         ABOUT SECTION
+    ========================================================== -->
+    <section id="about" class="min-vh-100 d-flex align-items-center py-5">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-12 col-md-10 col-lg-9 text-center">
+
+                    <!-- ABOUT HEADING -->
+                    <h1 class="display-1 fw-bold text-black mb-4">
+                        About
+                    </h1>
+
+
+                    <!-- PROFILE PICTURE -->
+                    <div class="mb-5">
+
+                        <img
+                            src="images/about/1.png"
+                            alt="Roshan Jayathilakage"
+                            class="img-fluid rounded-4 shadow-sm"
+                            style="width: 240px; height: 320px; object-fit: cover;"
+                        >
+
+                    </div>
+
+
+                    <!-- ABOUT TEXT -->
+                    <div class="mx-auto">
+
+                        <p class="fs-5 lh-base mb-4">
+
+                            I am a Civil, Structural and Materials Engineer with
+                            experience across structural design, construction
+                            delivery, sustainable construction materials,
+                            research and engineering education. My professional
+                            journey has allowed me to work across both industry
+                            and academia, from designing residential and
+                            commercial structures and coordinating major
+                            construction projects to developing innovative
+                            low-carbon and recycled construction materials.
+
+                        </p>
+
+
+                        <p class="fs-5 lh-base mb-0">
+
+                            My professional interests sit at the intersection of
+                            structural engineering, construction delivery,
+                            advanced materials and sustainable infrastructure.
+                            I aim to combine practical engineering experience
+                            with materials innovation to develop solutions that
+                            are safe, constructible, durable, resource-efficient
+                            and capable of delivering meaningful value to
+                            industry and society.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- END ABOUT SECTION -->
+<style>
+
+    /* Existing About CSS stays above this line */
+
+
+    /* =========================================================
+       PROJECTS SECTION
+    ========================================================== */
+
+    #projects {
+        background-color: #ffffff;
+    }
+
+    .projects-title {
+        font-size: 4rem;
+        font-weight: 700;
+        color: #000000;
+    }
+
+    .project-card {
+        border: none;
+        background-color: transparent;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+        transform: translateY(-6px);
+    }
+
+    .project-image {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border-radius: 24px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    }
+
+    .project-card-title {
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-top: 1rem;
+        margin-bottom: 0.75rem;
+        color: #000000;
+    }
+
+    .project-card-text {
+        font-size: 0.98rem;
+        line-height: 1.5;
+        color: #555555;
+    }
+
+    .project-link {
+        font-weight: 700;
+        color: #000000;
+        text-decoration: none;
+    }
+
+    .project-link:hover {
+        text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+
+        .projects-title {
+            font-size: 3rem;
+        }
+
+    }
+/* =========================================================
+   SKILLS SECTION
+========================================================== */
+
+#skills {
+    scroll-margin-top: 30px;
+}
+
+
+/* ---------------------------------------------------------
+   Individual skill column
+---------------------------------------------------------- */
+
+.skill-item {
+    padding: 10px 18px 20px 18px;
+}
+
+
+/* ---------------------------------------------------------
+   Skill icon container
+---------------------------------------------------------- */
+
+.skill-icon-wrapper {
+    width: 150px;
+    height: 130px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ---------------------------------------------------------
+   Skill icons
+---------------------------------------------------------- */
+
+.skill-icon {
+    width: 120px;
+    height: 120px;
+
+    object-fit: contain;
+
+    transition:
+        transform 0.3s ease;
+}
+
+
+/* Small hover movement */
+.skill-item:hover .skill-icon {
+    transform: translateY(-6px);
+}
+
+
+/* ---------------------------------------------------------
+   Skill title
+---------------------------------------------------------- */
+
+.skill-item h3 {
+    color: #151515;
+}
+
+
+/* ---------------------------------------------------------
+   Description
+---------------------------------------------------------- */
+
+.skill-item p {
+    line-height: 1.6;
+}
+
+
+/* ---------------------------------------------------------
+   Skill links
+---------------------------------------------------------- */
+
+.skill-link {
+    color: #0d6efd;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    display: inline-block;
+
+    margin-top: 4px;
+
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.skill-link:hover {
+    color: #084298;
+
+    transform: translateX(4px);
+}
+
+
+/* ---------------------------------------------------------
+   Mobile
+---------------------------------------------------------- */
+
+@media (max-width: 767px) {
+
+    .skill-item {
+        max-width: 450px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .skill-icon-wrapper {
+        width: 130px;
+        height: 115px;
+    }
+
+
+    .skill-icon {
+        width: 105px;
+        height: 105px;
+    }
+
+}
+/* =========================================================
+   PUBLICATIONS & GRANTS
+========================================================== */
+
+#publications-grants {
+    scroll-margin-top: 95px;
+}
+
+
+/* =========================================================
+   PUBLICATIONS MAIN CARD
+========================================================== */
+
+.research-publication-card {
+    background:
+        linear-gradient(
+            145deg,
+            #0b2d4f,
+            #164f7a
+        );
+
+    color: #ffffff;
+
+    overflow: hidden;
+}
+
+
+.research-publication-card h3 {
+    color: #ffffff;
+}
+
+
+.research-publication-card .text-secondary {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+
+.research-label {
+    display: inline-block;
+
+    color: #8ec5ff;
+
+    font-size: 0.82rem;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.12em;
+}
+
+
+
+/* =========================================================
+   PUBLICATION TOPICS
+========================================================== */
+
+.publication-topic {
+    padding: 10px 0;
+
+    color: rgba(255, 255, 255, 0.88);
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.12);
+
+    font-size: 0.95rem;
+}
+
+
+.publication-topic:last-child {
+    border-bottom: none;
+}
+
+
+
+/* =========================================================
+   RESEARCH MINI CARDS
+========================================================== */
+
+.research-mini-card {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.research-mini-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+.research-number {
+    color: #0d6efd;
+
+    font-size: 1.2rem;
+
+    font-weight: 800;
+
+    letter-spacing: 0.08em;
+}
+
+
+
+/* =========================================================
+   GRANT CARDS
+========================================================== */
+
+.grant-card {
+    border-top: 4px solid #0d6efd !important;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.grant-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 14px 35px rgba(0, 0, 0, 0.09);
+}
+
+
+
+/* Grant amount */
+.grant-value {
+    color: #0d6efd;
+
+    font-size: 1.55rem;
+
+    font-weight: 800;
+
+    white-space: nowrap;
+}
+
+
+
+/* Small stat cards */
+.grant-stat {
+    background-color: #f1f6fb;
+
+    border-radius: 14px;
+
+    padding: 18px 10px;
+}
+
+
+.grant-stat-value {
+    color: #0d6efd;
+
+    font-size: 1.55rem;
+
+    font-weight: 800;
+}
+
+
+
+/* Research outcome box */
+.grant-highlight {
+    background-color: #f6f8fa;
+
+    border-left: 4px solid #0d6efd;
+
+    border-radius: 8px;
+
+    padding: 15px 18px;
+}
+
+
+
+/* =========================================================
+   GOOGLE SCHOLAR CALL TO ACTION
+========================================================== */
+
+.scholar-cta {
+    background-color: #ffffff;
+
+    border:
+        1px solid #e3e8ee;
+}
+
+
+
+/* =========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 767px) {
+
+    #publications-grants .display-3 {
+        font-size: 2.8rem;
+    }
+
+
+    .grant-value {
+        font-size: 1.3rem;
+    }
+
+}
+/* =========================================================
+   CONTACT SECTION
+========================================================== */
+
+.contact-section {
+    background:
+        linear-gradient(
+            135deg,
+            #050505 0%,
+            #111827 55%,
+            #07121f 100%
+        );
+
+    color: #ffffff;
+
+    scroll-margin-top: 30px;
+}
+
+
+/* Small heading above Contact Me */
+.contact-eyebrow {
+    color: #7fb3ff;
+    letter-spacing: 0.18em;
+}
+
+
+/* Intro paragraph */
+.contact-intro {
+    max-width: 720px;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    font-size: 1.1rem;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   EMAIL & PHONE
+========================================================== */
+
+.contact-detail {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    color: #ffffff;
+
+    font-size: 1.15rem;
+
+    font-weight: 600;
+
+    padding: 10px 18px;
+
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.contact-detail:hover {
+    color: #7fb3ff;
+
+    transform: translateY(-2px);
+}
+
+
+/* Email / phone symbol */
+.contact-detail-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #ffffff;
+
+    color: #111827;
+
+    font-size: 1.45rem;
+
+    flex-shrink: 0;
+}
+
+
+
+/* =========================================================
+   SOCIAL PROFILE LINKS
+========================================================== */
+
+.social-profile-link {
+    display: block;
+
+    text-decoration: none;
+}
+
+
+/* Circular background similar to your mockup */
+.social-icon-circle {
+    width: 105px;
+    height: 105px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1368ce,
+            #4f9cf9
+        );
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Actual PNG icon */
+.social-profile-icon {
+    width: 58px;
+    height: 58px;
+
+    object-fit: contain;
+}
+
+
+/* Hover */
+.social-profile-link:hover .social-icon-circle {
+    transform: translateY(-7px) scale(1.04);
+
+    box-shadow:
+        0 14px 35px rgba(13, 110, 253, 0.35);
+}
+
+
+/* Social name */
+.social-profile-link h3 {
+    transition: color 0.25s ease;
+}
+
+
+.social-profile-link:hover h3 {
+    color: #7fb3ff !important;
+}
+
+
+
+/* =========================================================
+   CLOSING TEXT
+========================================================== */
+
+.contact-closing {
+    color: rgba(255, 255, 255, 0.55);
+
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+    padding-top: 25px;
+
+    letter-spacing: 0.04em;
+}
+
+
+
+/* =========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 767px) {
+
+    .contact-detail {
+        justify-content: center;
+
+        font-size: 0.95rem;
+
+        text-align: left;
+    }
+
+
+    .social-icon-circle {
+        width: 90px;
+        height: 90px;
+    }
+
+
+    .social-profile-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+
+    #contact .display-2 {
+        font-size: 3rem;
+    }
+
+}
+/* =========================================================
+   SMOOTH PAGE SCROLLING
+========================================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Prevent sticky navbar from covering section headings */
+#about,
+#projects,
+#skills,
+#contact {
+    scroll-margin-top: 95px;
+}
+
+
+
+/* =========================================================
+   STICKY NAVIGATION BAR
+========================================================== */
+
+.portfolio-navbar {
+    background-color: rgba(8, 27, 48, 0.96);
+
+    min-height: 72px;
+
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    box-shadow:
+        0 4px 18px rgba(0, 0, 0, 0.12);
+
+    backdrop-filter: blur(10px);
+
+    z-index: 1030;
+}
+
+
+/* =========================================================
+   NAME / BRAND
+========================================================== */
+
+.portfolio-navbar .navbar-brand {
+    color: #ffffff;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+
+.portfolio-navbar .navbar-brand:hover {
+    color: #74b9ff;
+}
+
+.nav-name {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #a9d3ff;
+}
+
+.nav-credentials {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.68);
+    margin-left: 8px;
+}
+
+/* =========================================================
+   NAVIGATION LINKS
+========================================================== */
+
+.portfolio-nav {
+    align-items: center;
+
+    gap: 8px;
+}
+
+
+.portfolio-nav .nav-link {
+    color: rgba(255, 255, 255, 0.82);
+
+    font-weight: 600;
+
+    padding: 9px 15px;
+
+    border-radius: 50px;
+
+    transition:
+        color 0.25s ease,
+        background-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+/* Hover */
+.portfolio-nav .nav-link:hover {
+    color: #ffffff;
+
+    background-color: rgba(255, 255, 255, 0.10);
+
+    transform: translateY(-1px);
+}
+
+
+
+/* =========================================================
+   CONTACT BUTTON
+========================================================== */
+
+.portfolio-nav .contact-nav-link {
+    background-color: #0d6efd;
+
+    color: #ffffff;
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.portfolio-nav .contact-nav-link:hover {
+    background-color: #0b5ed7;
+
+    color: #ffffff;
+}
+
+
+
+/* =========================================================
+   MOBILE / TABLET
+========================================================== */
+
+@media (max-width: 767px) {
+
+    .portfolio-navbar .container {
+        flex-direction: column;
+
+        justify-content: center;
+    }
+
+
+    .portfolio-navbar .navbar-brand {
+        margin-right: 0;
+
+        margin-bottom: 8px;
+    }
+
+
+    .portfolio-nav {
+        width: 100%;
+
+        justify-content: center;
+
+        gap: 2px;
+
+        flex-wrap: wrap;
+    }
+
+
+    .portfolio-nav .nav-link {
+        font-size: 0.88rem;
+
+        padding: 7px 10px;
+    }
+
+
+    /* More space because navbar becomes taller on mobile */
+    #about,
+    #projects,
+    #skills,
+    #contact {
+        scroll-margin-top: 135px;
+    }
+
+}
+</style>
+<!-- =========================================================
+     PROJECTS SECTION
+========================================================== -->
+<section id="projects" class="py-5 bg-light">
+
+    <div class="container py-4">
+
+        <!-- Section Heading -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-8 text-center">
+
+                <h2 class="display-2 fw-bold text-black mb-3">
+                    Projects
+                </h2>
+
+                <p class="lead text-secondary mb-0">
+                    Selected engineering, construction and research projects
+                    from my professional and academic experience.
+                </p>
+
+            </div>
+        </div>
+
+
+        <!-- Projects Grid -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+
+
+            <!-- =====================================================
+                 PROJECT 1 - STRUCTURAL DESIGN
+            ====================================================== -->
+            <div class="col">
+
+                <div class="card h-100 border-0 bg-transparent text-center">
+
+                    <div class="ratio ratio-1x1 mb-3">
+
+                        <img
+                            src="images/projects/1.png"
+                            class="card-img-top object-fit-cover rounded-4 shadow-sm"
+                            alt="Structural Design Project"
+                        >
+
+                    </div>
+
+                    <div class="card-body px-2">
+
+                        <h3 class="h4 fw-bold mb-3">
+                            Structural Design
+                        </h3>
+
+                        <p class="card-text text-secondary">
+                            Structural design and documentation (NSIENT Consulting Engineers) of Australian
+                            residential, commercial and multi-unit developments,
+                            including concrete, steel and timber framing,
+                            foundations, bracing and retaining structures.
+                        </p>
+
+                        <a
+                            href="#structural-design"
+                            class="fw-bold text-dark text-decoration-none"
+                        >
+                            View Project →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =====================================================
+                 PROJECT 2 - CIVIL CONSTRUCTION
+            ====================================================== -->
+            <div class="col">
+
+                <div class="card h-100 border-0 bg-transparent text-center">
+
+                    <div class="ratio ratio-1x1 mb-3">
+
+                        <img
+                            src="images/projects/2.png"
+                            class="card-img-top object-fit-cover rounded-4 shadow-sm"
+                            alt="Civil Construction and Planning Project"
+                        >
+
+                    </div>
+
+                    <div class="card-body px-2">
+
+                        <h3 class="h4 fw-bold mb-3">
+                            Civil Construction and Planning
+                        </h3>
+
+                        <p class="card-text text-secondary">
+                            Site engineering and construction planning for a
+                            major multi-storey development (CML-MTD Constructions pvt ltd.), including piling,
+                            structural works, QA inspections, subcontractor
+                            coordination and MS Project scheduling.
+                        </p>
+
+                        <a
+                            href="#civil-construction"
+                            class="fw-bold text-dark text-decoration-none"
+                        >
+                            View Project →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =====================================================
+                 PROJECT 3 - CONCRETE 3D PRINTING
+            ====================================================== -->
+            <div class="col">
+
+                <div class="card h-100 border-0 bg-transparent text-center">
+
+                    <div class="ratio ratio-1x1 mb-3">
+
+                        <img
+                            src="images/projects/3.png"
+                            class="card-img-top object-fit-cover rounded-4 shadow-sm"
+                            alt="Concrete 3D Printing Construction Research"
+                        >
+
+                    </div>
+
+                    <div class="card-body px-2">
+
+                        <h3 class="h4 fw-bold mb-3">
+                            Concrete 3D Printing Construction
+                        </h3>
+
+                        <p class="card-text text-secondary">
+                            PhD research (Swinburne University of Technology) investigating printable concrete,
+                            rheology, yield stress, extrudability, buildability
+                            and structural stability for automated and digital
+                            construction.
+                        </p>
+
+                        <a
+                            href="#concrete-3d-printing"
+                            class="fw-bold text-dark text-decoration-none"
+                        >
+                            View Project →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =====================================================
+                 PROJECT 4 - RMIT SUSTAINABLE MATERIALS
+            ====================================================== -->
+            <div class="col">
+
+                <div class="card h-100 border-0 bg-transparent text-center">
+
+                    <div class="ratio ratio-1x1 mb-3">
+
+                        <img
+                            src="images/projects/4.png"
+                            class="card-img-top object-fit-cover rounded-4 shadow-sm"
+                            alt="Sustainable Recycled Materials for Construction"
+                        >
+
+                    </div>
+
+                    <div class="card-body px-2">
+
+                        <h3 class="h4 fw-bold mb-3">
+                            Sustainable Recycled Materials for Construction
+                        </h3>
+
+                        <p class="card-text text-secondary">
+                            RMIT research focused on low-carbon and alternative
+                            construction materials, including Australian clays,
+                            supplementary cementitious materials, material
+                            activation and advanced characterisation.
+                        </p>
+
+                        <a
+                            href="#sustainable-materials"
+                            class="fw-bold text-dark text-decoration-none"
+                        >
+                            View Project →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =====================================================
+                 PROJECT 5 - UNSW NOISE PANELS
+            ====================================================== -->
+            <div class="col">
+
+                <div class="card h-100 border-0 bg-transparent text-center">
+
+                    <div class="ratio ratio-1x1 mb-3">
+
+                        <img
+                            src="images/projects/5.png"
+                            class="card-img-top object-fit-cover rounded-4 shadow-sm"
+                            alt="End-of-Life Tyre Based Concrete Noise Panels"
+                        >
+
+                    </div>
+
+                    <div class="card-body px-2">
+
+                        <h3 class="h4 fw-bold mb-3">
+                            End-of-Life Tyre Based Concrete Noise Panels
+                        </h3>
+
+                        <p class="card-text text-secondary">
+                            UNSW industry research developing sustainable
+                            precast traffic noise-wall panels using end-of-life
+                            tyres, recycled glass and manufactured or recycled
+                            aggregates.
+                        </p>
+
+                        <a
+                            href="#noise-panels"
+                            class="fw-bold text-dark text-decoration-none"
+                        >
+                            View Project →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <!-- END PROJECTS GRID -->
+
+    </div>
+
+</section>
+<!-- END PROJECTS SECTION -->
+<!-- =========================================================
+     SKILLS SECTION
+========================================================== -->
+<section id="skills" class="py-5 bg-white">
+
+    <div class="container py-5">
+
+
+        <!-- =====================================================
+             SECTION HEADING
+        ====================================================== -->
+        <div class="row justify-content-center mb-5">
+
+            <div class="col-lg-9 text-center">
+
+                <p class="text-uppercase fw-semibold text-primary mb-2">
+                    Engineering Capabilities
+                </p>
+
+                <h2 class="display-3 fw-bold text-dark mb-3">
+                    Skills
+                </h2>
+
+                <p class="lead text-secondary">
+                    A multidisciplinary engineering background combining
+                    structural design, construction delivery, sustainable
+                    materials, advanced testing and digital engineering.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             SKILLS GRID
+        ====================================================== -->
+        <div class="row g-5 justify-content-center text-center">
+
+
+            <!-- =================================================
+                 SKILL 1 - STRUCTURAL DESIGN
+            ================================================== -->
+            <div class="col-12 col-sm-6 col-lg-3">
+
+                <div class="skill-item h-100">
+
+                    <div class="skill-icon-wrapper mx-auto mb-4">
+
+                        <img
+                            src="images/skills/1.png"
+                            alt="Structural design and analysis"
+                            class="skill-icon"
+                        >
+
+                    </div>
+
+
+                    <h3 class="h4 fw-bold mb-3">
+                        Structural Design & Analysis
+                    </h3>
+
+
+                    <p class="text-secondary">
+                        Structural analysis and design of residential,
+                        commercial and multi-unit developments covering
+                        concrete, steel, timber, masonry, bracing,
+                        foundations and retaining structures.
+                    </p>
+
+
+                    <p class="small fw-semibold text-dark mb-3">
+                        SpaceGass • RAPT • Strand7 • AutoCAD •
+                        AS 3600 • AS 4100 • AS/NZS 1170 • NCC
+                    </p>
+
+
+                    <a
+                        href="#structural-design"
+                        class="skill-link"
+                    >
+                        View Structural Projects →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 SKILL 2 - CONSTRUCTION & PLANNING
+            ================================================== -->
+            <div class="col-12 col-sm-6 col-lg-3">
+
+                <div class="skill-item h-100">
+
+                    <div class="skill-icon-wrapper mx-auto mb-4">
+
+                        <img
+                            src="images/skills/2.png"
+                            alt="Civil construction and project planning"
+                            class="skill-icon"
+                        >
+
+                    </div>
+
+
+                    <h3 class="h4 fw-bold mb-3">
+                        Construction & Project Planning
+                    </h3>
+
+
+                    <p class="text-secondary">
+                        Site coordination, construction sequencing,
+                        substructure and structural works, QA/QC,
+                        contractor coordination, progress monitoring
+                        and construction programme development.
+                    </p>
+
+
+                    <p class="small fw-semibold text-dark mb-3">
+                        MS Project • Scheduling • Progress Monitoring •
+                        Site QA • Coordination • Reporting
+                    </p>
+
+
+                    <a
+                        href="#civil-construction"
+                        class="skill-link"
+                    >
+                        View Construction Experience →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 SKILL 3 - CONCRETE & MATERIALS
+            ================================================== -->
+            <div class="col-12 col-sm-6 col-lg-3">
+
+                <div class="skill-item h-100">
+
+                    <div class="skill-icon-wrapper mx-auto mb-4">
+
+                        <img
+                            src="images/skills/3.png"
+                            alt="Concrete and sustainable construction materials"
+                            class="skill-icon"
+                        >
+
+                    </div>
+
+
+                    <h3 class="h4 fw-bold mb-3">
+                        Concrete & Sustainable Materials
+                    </h3>
+
+
+                    <p class="text-secondary">
+                        Concrete mix development and performance
+                        evaluation using calcined clays, recycled
+                        aggregates, waste glass and end-of-life
+                        tyre rubber for lower-carbon construction.
+                    </p>
+
+
+                    <p class="small fw-semibold text-dark mb-3">
+                        Mix Design • Mechanical Testing • Durability •
+                        SCMs • Recycled Materials • Precast Concrete
+                    </p>
+
+
+                    <a
+                        href="#sustainable-materials"
+                        class="skill-link"
+                    >
+                        View Materials Research →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 SKILL 4 - RESEARCH & DIGITAL ENGINEERING
+            ================================================== -->
+            <div class="col-12 col-sm-6 col-lg-3">
+
+                <div class="skill-item h-100">
+
+                    <div class="skill-icon-wrapper mx-auto mb-4">
+
+                        <img
+                            src="images/skills/4.png"
+                            alt="Advanced research and digital engineering"
+                            class="skill-icon"
+                        >
+
+                    </div>
+
+
+                    <h3 class="h4 fw-bold mb-3">
+                        Experimental, Numerical & Analytical techniques
+                    </h3>
+
+
+                    <p class="text-secondary">
+                        Experimental investigation, numerical modelling
+                        and advanced material characterisation spanning
+                        concrete 3D printing, synchrotron X-ray methods
+                        and multi-scale materials research.
+                    </p>
+
+
+                    <p class="small fw-semibold text-dark mb-3">
+                        FDM • DEM • XRD • PDF • Synchrotron CT •
+                        SEM-EDS • Data Analysis
+                    </p>
+
+
+                    <a
+                        href="#concrete-3d-printing"
+                        class="skill-link"
+                    >
+                        View Research Projects →
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+<!-- END SKILLS SECTION -->
+<!-- =========================================================
+     PUBLICATIONS & GRANTS SECTION
+========================================================== -->
+<section id="publications-grants" class="py-5 bg-light">
+
+    <div class="container py-5">
+
+
+        <!-- =====================================================
+             SECTION HEADING
+        ====================================================== -->
+        <div class="row justify-content-center mb-5">
+
+            <div class="col-lg-9 text-center">
+
+                <p class="text-uppercase fw-semibold text-primary mb-2">
+                    Research Leadership & Impact
+                </p>
+
+                <h2 class="display-3 fw-bold text-dark mb-3">
+                    Publications & Grants
+                </h2>
+
+                <p class="lead text-secondary">
+                    Research outputs and competitive funding spanning
+                    sustainable construction materials, concrete 3D printing,
+                    recycled materials and advanced synchrotron
+                    characterisation.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             PUBLICATIONS
+        ====================================================== -->
+        <div class="row align-items-stretch g-4 mb-5">
+
+
+            <!-- Publications Main Card -->
+            <div class="col-lg-5">
+
+                <div class="card research-publication-card h-100 border-0 rounded-4">
+
+                    <div class="card-body p-4 p-lg-5">
+
+                        <span class="research-label mb-3">
+                            Publications
+                        </span>
+
+                        <h3 class="fw-bold mb-3">
+                            Peer-Reviewed Research
+                        </h3>
+
+                        <p class="text-secondary">
+                            My research publications cover sustainable
+                            cementitious materials, activated clays, 
+                            recycled-material concrete, concrete 3D printing,
+                            rheology, numerical simulations, digital construction and advanced
+                            material characterisation.
+                        </p>
+
+
+                        <!-- Research Areas -->
+                        <div class="mt-4">
+
+                            <div class="publication-topic">
+                                Sustainable & Low-Carbon Concrete
+                            </div>
+
+                            <div class="publication-topic">
+                                Calcined Clay Supplementary Cementitious Materials
+                            </div>
+
+                            <div class="publication-topic">
+                                Concrete 3D Printing & Digital Construction
+                            </div>
+
+                            <div class="publication-topic">
+                                Recycled Tyre & Waste-Glass Concrete
+                            </div>
+
+                            <div class="publication-topic">
+                                Synchrotron XRD, PDF & Micro-CT
+                            </div>
+
+                        </div>
+
+
+                        <!-- Google Scholar Button -->
+                        <a
+                            href="https://scholar.google.com/citations?hl=en&user=NEfgXw0AAAAJ&view_op=list_works&sortby=pubdate"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="btn btn-primary rounded-pill px-4 py-2 mt-4"
+                        >
+                            View Publications on Google Scholar ↗
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PUBLICATION IMPACT / THEMES
+            ================================================== -->
+            <div class="col-lg-7">
+
+                <div class="row g-4 h-100">
+
+
+                    <!-- Sustainable Materials -->
+                    <div class="col-md-6">
+
+                        <div class="card h-100 border-0 bg-white rounded-4 research-mini-card">
+
+                            <div class="card-body p-4">
+
+                                <div class="research-number mb-3">
+                                    01
+                                </div>
+
+                                <h4 class="h5 fw-bold">
+                                    Sustainable Materials
+                                </h4>
+
+                                <p class="small text-secondary mb-0">
+                                    Calcined clays, alternative SCMs,
+                                    low-carbon cementitious systems and
+                                    recycled construction materials.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Digital Construction -->
+                    <div class="col-md-6">
+
+                        <div class="card h-100 border-0 bg-white rounded-4 research-mini-card">
+
+                            <div class="card-body p-4">
+
+                                <div class="research-number mb-3">
+                                    02
+                                </div>
+
+                                <h4 class="h5 fw-bold">
+                                    Digital Construction
+                                </h4>
+
+                                <p class="small text-secondary mb-0">
+                                    Concrete 3D printing, rheology,
+                                    extrudability, buildability and
+                                    numerical modelling.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Circular Construction -->
+                    <div class="col-md-6">
+
+                        <div class="card h-100 border-0 bg-white rounded-4 research-mini-card">
+
+                            <div class="card-body p-4">
+
+                                <div class="research-number mb-3">
+                                    03
+                                </div>
+
+                                <h4 class="h5 fw-bold">
+                                    Circular Construction
+                                </h4>
+
+                                <p class="small text-secondary mb-0">
+                                    End-of-life tyres, recycled glass,
+                                    manufactured/recycled aggregates and
+                                    waste-derived construction materials.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Advanced Characterisation -->
+                    <div class="col-md-6">
+
+                        <div class="card h-100 border-0 bg-white rounded-4 research-mini-card">
+
+                            <div class="card-body p-4">
+
+                                <div class="research-number mb-3">
+                                    04
+                                </div>
+
+                                <h4 class="h5 fw-bold">
+                                    Synchrotron / Numerical Simulation / Acoustic Analysis
+                                </h4>
+
+                                <p class="small text-secondary mb-0">
+                                    Synchrotron XRD, PDF, micro/nano-CT
+                                    and complementary microstructural
+                                    techniques. DEM, FDM, FEM and CFD simulation. Acoustic analysis (experimental and numerical)
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             GRANTS
+        ====================================================== -->
+
+        <div class="text-center mb-4">
+
+            <p class="text-uppercase fw-semibold text-primary mb-2">
+                Competitive Funding & Research Leadership
+            </p>
+
+            <h3 class="display-6 fw-bold">
+                Research Grants
+            </h3>
+
+        </div>
+
+
+        <div class="row g-4 justify-content-center">
+
+
+            <!-- =================================================
+                 GRANT 1
+            ================================================== -->
+            <div class="col-lg-6">
+
+                <div class="card grant-card h-100 border-0 bg-white rounded-4">
+
+                    <div class="card-body p-4 p-lg-5">
+
+                        <div class="d-flex justify-content-between align-items-start flex-wrap gap-3 mb-3">
+
+                            <div>
+
+                                <span class="badge text-bg-primary mb-2">
+                                    2024–2025
+                                </span>
+
+                                <h4 class="h4 fw-bold mb-1">
+                                    RMIT Sustainable Development
+                                    Research Grant
+                                </h4>
+
+                            </div>
+
+
+                            <div class="grant-value">
+                                AUD 12,500
+                            </div>
+
+                        </div>
+
+
+                        <h5 class="h6 fw-bold text-primary mt-4">
+                            Advanced Synchrotron Analysis of Early-Age
+                            Hydration in Calcined Clay Concrete
+                        </h5>
+
+
+                        <p class="text-secondary mt-3">
+                            Individual grant holder responsible for planning
+                            and delivering the research program investigating
+                            calcined-clay cementitious systems using advanced
+                            laboratory and synchrotron characterisation.
+                        </p>
+
+
+                        <div class="grant-highlight mt-4">
+
+                            <strong>
+                                Research outcome
+                            </strong>
+
+                            <p class="small text-secondary mb-0 mt-1">
+                                Completed research program producing
+                                four Q1 journal publications.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 GRANT 2
+            ================================================== -->
+            <div class="col-lg-6">
+
+                <div class="card grant-card h-100 border-0 bg-white rounded-4">
+
+                    <div class="card-body p-4 p-lg-5">
+
+                        <div class="d-flex justify-content-between align-items-start flex-wrap gap-3 mb-3">
+
+                            <div>
+
+                                <span class="badge text-bg-primary mb-2">
+                                    2025–2026
+                                </span>
+
+                                <h4 class="h4 fw-bold mb-1">
+                                    Remade@ARI Grant
+                                </h4>
+
+                            </div>
+
+
+                            <div class="grant-value">
+                                ~AUD 190,000
+                            </div>
+
+                        </div>
+
+
+                        <h5 class="h6 fw-bold text-primary mt-4">
+                            Advancing Green Construction through
+                            Synchrotron Analysis of Calcined Clay Concrete
+                        </h5>
+
+
+                        <p class="text-secondary mt-3">
+                            Investigator responsible for the original
+                            proposal draft, experimental planning,
+                            coordination and execution of synchrotron
+                            experiments at the European Synchrotron
+                            Radiation Facility (ESRF), France.
+                        </p>
+
+
+                        <!-- Grant Metrics -->
+                        <div class="row g-3 mt-3">
+
+                            <div class="col-6">
+
+                                <div class="grant-stat text-center">
+
+                                    <div class="grant-stat-value">
+                                        176 h
+                                    </div>
+
+                                    <div class="small text-secondary">
+                                        Synchrotron beamtime
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-6">
+
+                                <div class="grant-stat text-center">
+
+                                    <div class="grant-stat-value">
+                                        4 Q1
+                                    </div>
+
+                                    <div class="small text-secondary">
+                                        First-author publications
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="grant-highlight mt-4">
+
+                            <strong>
+                                Research leadership
+                            </strong>
+
+                            <p class="small text-secondary mb-0 mt-1">
+                                Proposal development, international
+                                experimental coordination, beamline research
+                                and publication leadership.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =====================================================
+             GOOGLE SCHOLAR CTA
+        ====================================================== -->
+        <div class="row justify-content-center mt-5">
+
+            <div class="col-lg-8 text-center">
+
+                <div class="scholar-cta rounded-4 p-4 p-lg-5">
+
+                    <p class="text-uppercase small fw-bold text-primary mb-2">
+                        Complete Publication Record
+                    </p>
+
+                    <h3 class="h3 fw-bold mb-3">
+                        Explore My Research
+                    </h3>
+
+                    <p class="text-secondary mb-4">
+                        View my latest journal articles, conference papers,
+                        citations and complete research publication history
+                        on Google Scholar.
+                    </p>
+
+                    <a
+                        href="https://scholar.google.com/citations?hl=en&user=NEfgXw0AAAAJ&view_op=list_works&sortby=pubdate"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-outline-primary rounded-pill px-4 py-2"
+                    >
+                        Open Google Scholar ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+<!-- END PUBLICATIONS & GRANTS SECTION -->
+<!-- =========================================================
+     CONTACT ME SECTION
+========================================================== -->
+<section id="contact" class="contact-section py-5">
+
+    <div class="container py-5">
+
+
+        <!-- =====================================================
+             SECTION TITLE
+        ====================================================== -->
+        <div class="row justify-content-center">
+
+            <div class="col-lg-10 text-center">
+
+                <p class="text-uppercase fw-semibold contact-eyebrow mb-2">
+                    Let's Connect
+                </p>
+
+                <h2 class="display-2 fw-bold text-white mb-4">
+                    Contact Me
+                </h2>
+
+                <p class="contact-intro mx-auto mb-5">
+                    Interested in engineering, construction,
+                    sustainable materials, research collaboration
+                    or professional opportunities? Feel free to get in touch.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             EMAIL & PHONE
+        ====================================================== -->
+        <div class="row justify-content-center g-4 mb-5">
+
+            <!-- EMAIL -->
+            <div class="col-12 col-md-auto">
+
+                <a
+                    href="mailto:roshanjayathilaka111@gmail.com"
+                    class="contact-detail text-decoration-none"
+                >
+
+                    <span class="contact-detail-icon">
+                        ✉
+                    </span>
+
+                    <span>
+                        roshanjayathilaka111@gmail.com
+                    </span>
+
+                </a>
+
+            </div>
+
+
+
+            <!-- PHONE -->
+            <div class="col-12 col-md-auto">
+
+                <a
+                    href="tel:+61420919206"
+                    class="contact-detail text-decoration-none"
+                >
+
+                    <span class="contact-detail-icon">
+                        ☎
+                    </span>
+
+                    <span>
+                        +61 420 919 206
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             PROFESSIONAL PROFILE LINKS
+        ====================================================== -->
+        <div class="row justify-content-center text-center g-4">
+
+
+            <!-- LINKEDIN -->
+            <div class="col-6 col-md-3 col-lg-2">
+
+                <a
+                    href="https://www.linkedin.com/in/roshan-jayathilaka-09197272"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-profile-link"
+                >
+
+                    <div class="social-icon-circle mx-auto">
+
+                        <img
+                            src="icons/linkedin.png"
+                            alt="LinkedIn"
+                            class="social-profile-icon"
+                        >
+
+                    </div>
+
+                    <h3 class="h5 text-white mt-3 mb-0">
+                        LinkedIn
+                    </h3>
+
+                </a>
+
+            </div>
+
+
+
+            <!-- GOOGLE SCHOLAR -->
+            <div class="col-6 col-md-3 col-lg-2">
+
+                <a
+                    href="https://scholar.google.com/citations?user=NEfgXw0AAAAJ&hl=en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-profile-link"
+                >
+
+                    <div class="social-icon-circle mx-auto">
+
+                        <img
+                            src="icons/gscholar.png"
+                            alt="Google Scholar"
+                            class="social-profile-icon"
+                        >
+
+                    </div>
+
+                    <h3 class="h5 text-white mt-3 mb-0">
+                        Google Scholar
+                    </h3>
+
+                </a>
+
+            </div>
+
+
+
+            <!-- RESEARCHGATE -->
+            <div class="col-6 col-md-3 col-lg-2">
+
+                <a
+                    href="https://www.researchgate.net/profile/Roshan-Jayathilaka?ev=hdr_xprf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-profile-link"
+                >
+
+                    <div class="social-icon-circle mx-auto">
+
+                        <img
+                            src="icons/RG.jfif"
+                            alt="ResearchGate"
+                            class="social-profile-icon"
+                        >
+
+                    </div>
+
+                    <h3 class="h5 text-white mt-3 mb-0">
+                        ResearchGate
+                    </h3>
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =====================================================
+             CLOSING MESSAGE
+        ====================================================== -->
+        <div class="row justify-content-center mt-5 pt-4">
+
+            <div class="col-lg-8">
+
+                <div class="contact-closing text-center">
+
+                    <p class="mb-2">
+                        Engineering • Construction • Sustainable Materials • Research
+                    </p>
+
+                    <p class="small mb-0">
+                        Melbourne, Australia
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+<!-- END CONTACT ME SECTION -->
+
+<!-- =========================================================
+     STRUCTURAL DESIGN PROJECT SECTION
+========================================================== -->
+<section id="structural-design" class="py-5 bg-white">
+
+    <div class="container py-5">
+
+        <!-- Section Heading -->
+        <div class="row justify-content-center mb-5">
+
+            <div class="col-lg-9 text-center">
+
+                <p class="text-uppercase fw-semibold text-secondary mb-2">
+                    Engineering Experience
+                </p>
+
+                <h2 class="display-3 fw-bold text-dark mb-3">
+                    Structural Design
+                </h2>
+
+                <p class="lead text-secondary">
+                    Selected examples from more than 100 Australian
+                    residential, commercial and multi-unit structural
+                    design packages completed during my structural
+                    engineering experience in Melbourne.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             REDWOOD DRIVE
+        ====================================================== -->
+        <div class="row align-items-center g-5 mb-5 pb-5 border-bottom">
+
+            <!-- Image -->
+            <div class="col-lg-7">
+
+                <img
+                    src="images/projects/structural/redwood.png"
+                    alt="Redwood Drive Structural Design"
+                    class="img-fluid rounded-4 shadow-sm w-100"
+                >
+
+            </div>
+
+
+            <!-- Description -->
+            <div class="col-lg-5">
+
+                <span class="badge text-bg-primary mb-3">
+                    Multi-Unit Development
+                </span>
+
+                <h3 class="fw-bold mb-3">
+                    Redwood Drive, Cowes
+                </h3>
+
+                <p class="text-secondary">
+                    Complete structural design for a 12-unit,
+                    three-storey townhouse development involving
+                    design of multiple elements
+                    across the development.
+                </p>
+
+
+                <h4 class="h6 fw-bold mt-4">
+                    My contribution
+                </h4>
+
+                <ul class="text-secondary ps-3">
+
+                    <li class="mb-2">
+                        Structural analysis and member design.
+                    </li>
+
+                    <li class="mb-2">
+                        Timber and steel framing design.
+                    </li>
+
+                    <li class="mb-2">
+                        Roof framing and bracing design.
+                    </li>
+
+                    <li class="mb-2">
+                        Slab and foundation design.
+                    </li>
+
+                    <li class="mb-2">
+                        Retaining structures and structural detailing.
+                    </li>
+
+                    <li>
+                        Coordination with architects, drafters
+                        and builders.
+                    </li>
+
+                </ul>
+
+
+                <p class="small text-secondary mt-4 mb-0">
+
+                    <strong>Tools / Standards:</strong>
+                    SPACE GASS, RAPT, AutoCAD, Revit,
+                    AS 3600, AS 4100, AS/NZS 1170,
+                    AS 2870 and NCC.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             OTHER STRUCTURAL PROJECTS
+        ====================================================== -->
+
+        <div class="text-center mb-5">
+
+            <h3 class="fw-bold">
+                Additional Structural Design Examples
+            </h3>
+
+            <p class="text-secondary">
+                Selected examples demonstrating foundation,
+                framing and retaining-wall design experience.
+            </p>
+
+        </div>
+
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+
+            <!-- FLORENCE AVENUE -->
+            <div class="col">
+
+                <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+
+                    <img
+                        src="images/projects/structural/florence.png"
+                        class="card-img-top structural-example-image"
+                        alt="Florence Avenue Structural Design"
+                    >
+
+                    <div class="card-body p-4">
+
+                        <h4 class="h5 fw-bold">
+                            Florence Avenue
+                        </h4>
+
+                        <p class="text-secondary mb-3">
+                            Residential alteration project involving
+                            coordination between existing and new
+                            structural systems.
+                        </p>
+
+                        <ul class="small text-secondary ps-3 mb-0">
+
+                            <li>Footing layout</li>
+                            <li>Pad and strip footings</li>
+                            <li>Timber roof framing</li>
+                            <li>Beam and lintel design</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- GLEN SHIAN -->
+            <div class="col">
+
+                <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+
+                    <img
+                        src="images/projects/structural/glenshian.png"
+                        class="card-img-top structural-example-image"
+                        alt="Glen Shian Retaining Wall Design"
+                    >
+
+                    <div class="card-body p-4">
+
+                        <h4 class="h5 fw-bold">
+                            Glen Shian Crescent
+                        </h4>
+
+                        <p class="text-secondary mb-3">
+                            Retaining-wall engineering demonstrating
+                            ground-structure interaction and practical
+                            construction detailing.
+                        </p>
+
+                        <ul class="small text-secondary ps-3 mb-0">
+
+                            <li>Sleeper retaining-wall design</li>
+                            <li>Wall sections and details</li>
+                            <li>Post/foundation design</li>
+                            <li>Construction sequencing</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- KENSINGTON -->
+            <div class="col">
+
+                <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+
+                    <img
+                        src="images/projects/structural/kensington.png"
+                        class="card-img-top structural-example-image"
+                        alt="Kensington Structural Design"
+                    >
+
+                    <div class="card-body p-4">
+
+                        <h4 class="h5 fw-bold">
+                            The Ridgeway, Kensington
+                        </h4>
+
+                        <p class="text-secondary mb-3">
+                            Residential structural design involving
+                            framing integration with existing building
+                            conditions.
+                        </p>
+
+                        <ul class="small text-secondary ps-3 mb-0">
+
+                            <li>Roof and floor framing</li>
+                            <li>Beam/lintel design</li>
+                            <li>Structural member selection</li>
+                            <li>Existing/new structural coordination</li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             EXPERIENCE SUMMARY
+        ====================================================== -->
+
+        <div class="row justify-content-center mt-5 pt-4">
+
+    <div class="col-lg-10">
+
+        <div class="card border-0 bg-light rounded-4">
+
+            <div class="card-body p-4 p-lg-5">
+
+                <div class="row text-center g-4">
+
+                    <!-- 100+ Projects -->
+                    <div class="col-12 col-md-4">
+
+                        <h3 class="display-6 fw-bold text-primary">
+                            100+
+                        </h3>
+
+                        <p class="mb-0 text-secondary">
+                            Australian structural
+                            design packages
+                        </p>
+
+                    </div>
+
+
+                    <!-- Consultancy Experience -->
+                    <div class="col-12 col-md-4">
+
+                        <h3 class="display-6 fw-bold text-primary">
+                            2 years
+                        </h3>
+
+                        <p class="mb-0 text-secondary">
+                            Australian consultancy
+                            experience
+                        </p>
+
+                    </div>
+
+
+                    <!-- Standards -->
+                    <div class="col-12 col-md-4">
+
+                        <h3 class="display-6 fw-bold text-primary">
+                            AU • BS • EC • NCC
+                        </h3>
+
+                        <p class="mb-0 text-secondary">
+                            Australian, British and Eurocode standards
+                            together with NCC experience
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Back to Projects -->
+<div class="text-center mt-5">
+
+    <a
+        href="#projects"
+        class="btn btn-outline-dark rounded-pill px-4 py-2"
+    >
+        ← Back to Projects
+    </a>
+
+</div>
+
+</div>
+
+</section>
+<!-- END STRUCTURAL DESIGN PROJECT SECTION -->
+<!-- =========================================================
+     CIVIL CONSTRUCTION AND PLANNING
+========================================================== -->
+<section id="civil-construction" class="py-5 bg-light">
+
+    <div class="container py-5">
+
+
+        <!-- =====================================================
+             SECTION HEADING
+        ====================================================== -->
+        <div class="row justify-content-center mb-5">
+
+            <div class="col-lg-9 text-center">
+
+                <p class="text-uppercase fw-semibold text-secondary mb-2">
+                    Civil Engineering Experience
+                </p>
+
+                <h2 class="display-3 fw-bold text-dark mb-3">
+                    Civil Construction & Planning
+                </h2>
+
+                <p class="lead text-secondary">
+                    Selected construction, site-engineering and project-planning
+                    experience covering substructure works, structural works,
+                    quality coordination, contractor management, programme
+                    development and progress monitoring.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =====================================================
+             PROJECT INTRODUCTION
+        ====================================================== -->
+        <div class="row align-items-center g-5 mb-5 pb-5 border-bottom">
+
+            <!-- Project Image -->
+            <div class="col-lg-7">
+
+                <img
+                    src="images/projects/civil/1.png"
+                    alt="Civil Construction and Planning Project"
+                    class="img-fluid rounded-4 shadow-sm w-100 civil-main-image"
+                >
+
+            </div>
+
+
+            <!-- Project Description -->
+            <div class="col-lg-5">
+
+                <span class="badge text-bg-primary mb-3">
+                    Major Residential Construction
+                </span>
+
+                <h3 class="fw-bold mb-3">
+                    Multi-Storey Residential Development
+                </h3>
+
+                <p class="text-secondary">
+                    I worked as a Civil Engineer and Planning Engineer on a
+                    major residential construction project from foundation and
+                    substructure works through structural construction,
+                    finishing activities and handover.
+                </p>
+
+
+                <h4 class="h6 fw-bold mt-4">
+                    Project responsibilities
+                </h4>
+
+                <ul class="text-secondary ps-3">
+
+                    <li class="mb-2">
+                        Day-to-day site supervision and construction coordination.
+                    </li>
+
+                    <li class="mb-2">
+                        Foundation, substructure and reinforced-concrete works.
+                    </li>
+
+                    <li class="mb-2">
+                        Consultant inspections and construction approvals.
+                    </li>
+
+                    <li class="mb-2">
+                        QA/QC and resolution of site non-conformances.
+                    </li>
+
+                    <li class="mb-2">
+                        Subcontractor and workforce coordination.
+                    </li>
+
+                    <li>
+                        Construction scheduling and progress monitoring.
+                    </li>
+
+                </ul>
+
+
+                <div class="row g-3 mt-3">
+
+                    <div class="col-6">
+
+                        <div class="bg-white rounded-4 p-3 text-center h-100">
+
+                            <h4 class="fw-bold text-primary mb-1">
+                                ~AUD 25M
+                            </h4>
+
+                            <p class="small text-secondary mb-0">
+                                Project value
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-6">
+
+                        <div class="bg-white rounded-4 p-3 text-center h-100">
+
+                            <h4 class="fw-bold text-primary mb-1">
+                                15 Storeys
+                            </h4>
+
+                            <p class="small text-secondary mb-0">
+                                Building construction
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             SITE-BASED OPERATIONS
+        ====================================================== -->
+        <div class="row align-items-center g-5 mb-5 pb-5 border-bottom">
+
+            <!-- Description -->
+            <div class="col-lg-5 order-2 order-lg-1">
+
+                <span class="badge text-bg-dark mb-3">
+                    Site Engineering
+                </span>
+
+                <h3 class="fw-bold mb-3">
+                    Site-Based Operations
+                </h3>
+
+                <p class="text-secondary">
+                    My site role involved coordinating construction activities,
+                    monitoring substructure works and working directly with
+                    contractors, consultants and site teams to maintain quality,
+                    safety and progress.
+                </p>
+
+
+                <h4 class="h6 fw-bold mt-4">
+                    Key activities
+                </h4>
+
+                <ul class="text-secondary ps-3">
+
+                    <li class="mb-2">
+                        Excavation and groundwork coordination.
+                    </li>
+
+                    <li class="mb-2">
+                        Piling and foundation-stage supervision.
+                    </li>
+
+                    <li class="mb-2">
+                        Coordination of pile dynamic testing where required.
+                    </li>
+
+                    <li class="mb-2">
+                        Reinforcement and pre-concrete inspections.
+                    </li>
+
+                    <li class="mb-2">
+                        Contractor and consultant coordination.
+                    </li>
+
+                    <li>
+                        Progress monitoring and issue resolution.
+                    </li>
+
+                </ul>
+
+
+                <p class="small text-secondary mt-4 mb-0">
+                    The experience developed a practical understanding of
+                    construction sequencing, site constraints, workmanship,
+                    inspection requirements and the relationship between
+                    engineering drawings and site delivery.
+                </p>
+
+            </div>
+
+
+            <!-- Site Image -->
+            <div class="col-lg-7 order-1 order-lg-2">
+
+                <img
+                    src="images/projects/civil/2.png"
+                    alt="Site Based Construction Operations"
+                    class="img-fluid rounded-4 shadow-sm w-100 civil-feature-image"
+                >
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             PROJECT PLANNING AND DELIVERY
+        ====================================================== -->
+        <div class="row align-items-center g-5 mb-5 pb-5 border-bottom">
+
+            <!-- Planning Image -->
+            <div class="col-lg-7">
+
+                <img
+                    src="images/projects/civil/3.png"
+                    alt="Project Planning and Delivery"
+                    class="img-fluid rounded-4 shadow-sm w-100 civil-feature-image"
+                >
+
+            </div>
+
+
+            <!-- Description -->
+            <div class="col-lg-5">
+
+                <span class="badge text-bg-primary mb-3">
+                    Planning & Scheduling
+                </span>
+
+                <h3 class="fw-bold mb-3">
+                    Project Planning & Delivery
+                </h3>
+
+                <p class="text-secondary">
+                    In addition to site engineering, I prepared and updated
+                    construction programmes using Microsoft Project to support
+                    sequencing, resource coordination and progress monitoring
+                    across the project.
+                </p>
+
+
+                <h4 class="h6 fw-bold mt-4">
+                    Planning responsibilities
+                </h4>
+
+                <ul class="text-secondary ps-3">
+
+                    <li class="mb-2">
+                        Prepared annual, monthly and weekly construction programmes.
+                    </li>
+
+                    <li class="mb-2">
+                        Developed work breakdown structures and construction sequences.
+                    </li>
+
+                    <li class="mb-2">
+                        Monitored actual progress against planned activities.
+                    </li>
+
+                    <li class="mb-2">
+                        Identified critical and delayed activities.
+                    </li>
+
+                    <li class="mb-2">
+                        Coordinated labour, plant and work-front priorities.
+                    </li>
+
+                    <li>
+                        Prepared programme updates for project meetings and management.
+                    </li>
+
+                </ul>
+
+
+                <div class="card border-0 bg-white rounded-4 mt-4">
+
+                    <div class="card-body">
+
+                        <p class="small text-uppercase fw-bold text-primary mb-2">
+                            Primary planning tool
+                        </p>
+
+                        <h4 class="h5 fw-bold mb-1">
+                            Microsoft Project
+                        </h4>
+
+                        <p class="small text-secondary mb-0">
+                            Scheduling • Progress tracking • Critical activities
+                            • Programme updates
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             STEMS CONSULTANT EXPERIENCE
+        ====================================================== -->
+        <div class="row align-items-center g-5 mb-5">
+
+            <!-- Description -->
+            <div class="col-lg-5 order-2 order-lg-1">
+
+                <span class="badge text-bg-secondary mb-3">
+                    Earlier Site Experience
+                </span>
+
+                <h3 class="fw-bold mb-3">
+                    STEMS Consultant
+                </h3>
+
+                <p class="text-secondary mb-1">
+                    <strong>
+                        PT Slab Level Survey & Site Coordination
+                    </strong>
+                </p>
+
+                <p class="text-secondary">
+                    Earlier in my engineering career, I gained practical
+                    site-assurance experience on post-tensioned concrete
+                    construction projects.
+                </p>
+
+
+                <h4 class="h6 fw-bold mt-4">
+                    Key activities
+                </h4>
+
+                <ul class="text-secondary ps-3">
+
+                    <li class="mb-2">
+                        PT slab level surveying and site verification.
+                    </li>
+
+                    <li class="mb-2">
+                        Construction set-out and level checks.
+                    </li>
+
+                    <li class="mb-2">
+                        Review of tendon profiles and reinforcement arrangements.
+                    </li>
+
+                    <li class="mb-2">
+                        Pre-pour inspection support.
+                    </li>
+
+                    <li class="mb-2">
+                        Concrete slump and test-cube record checks.
+                    </li>
+
+                    <li>
+                        Coordination with site teams to maintain construction accuracy.
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- STEMS Image -->
+            <div class="col-lg-7 order-1 order-lg-2">
+
+                <img
+                    src="images/projects/civil/4.png"
+                    alt="STEMS Consultant PT Slab Level Survey"
+                    class="img-fluid rounded-4 shadow-sm w-100 civil-feature-image"
+                >
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             CIVIL EXPERIENCE SUMMARY
+        ====================================================== -->
+        <div class="row justify-content-center mt-5 pt-4">
+
+            <div class="col-lg-10">
+
+                <div class="card border-0 bg-white rounded-4">
+
+                    <div class="card-body p-4 p-lg-5">
+
+                        <div class="row text-center g-4">
+
+
+                            <!-- Site Delivery -->
+                            <div class="col-12 col-md-4">
+
+                                <h3 class="display-6 fw-bold text-primary">
+                                    Site
+                                </h3>
+
+                                <p class="mb-0 text-secondary">
+                                    Construction supervision,
+                                    QA and coordination
+                                </p>
+
+                            </div>
+
+
+                            <!-- Planning -->
+                            <div class="col-12 col-md-4">
+
+                                <h3 class="display-6 fw-bold text-primary">
+                                    MS Project
+                                </h3>
+
+                                <p class="mb-0 text-secondary">
+                                    Scheduling and
+                                    progress monitoring
+                                </p>
+
+                            </div>
+
+
+                            <!-- Delivery -->
+                            <div class="col-12 col-md-4">
+
+                                <h3 class="display-6 fw-bold text-primary">
+                                    Delivery
+                                </h3>
+
+                                <p class="mb-0 text-secondary">
+                                    Foundations through
+                                    project handover
+                                </p>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             BACK TO PROJECTS
+        ====================================================== -->
+        <div class="text-center mt-5">
+
+            <a
+                href="#projects"
+                class="btn btn-outline-dark rounded-pill px-4 py-2"
+            >
+                ← Back to Projects
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+<!-- END CIVIL CONSTRUCTION AND PLANNING SECTION -->
+<!-- =========================================================
+     CONCRETE 3D PRINTING CONSTRUCTION
+========================================================== -->
+<section id="concrete-3d-printing" class="py-5 bg-white">
+
+    <div class="container py-5">
+
+
+        <!-- =====================================================
+             SECTION INTRODUCTION
+        ====================================================== -->
+        <div class="row justify-content-center mb-5">
+
+            <div class="col-lg-9 text-center">
+
+                <p class="text-uppercase fw-semibold text-secondary mb-2">
+                    PhD Research & Digital Construction
+                </p>
+
+                <h2 class="display-3 fw-bold text-dark mb-3">
+                    Concrete 3D Printing Construction
+                </h2>
+
+                <p class="lead text-secondary">
+                    Experimental and numerical investigation of
+                    fresh-state behaviour, extrudability, buildability
+                    and structural stability of 3D printed concrete
+                    for automated construction.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             MAIN RESEARCH IMAGE
+        ====================================================== -->
+        <div class="row align-items-center g-5 mb-5 pb-5 border-bottom">
+
+            <!-- Image -->
+            <div class="col-lg-7">
+
+                <img
+                    src="images/projects/3dprinting/1.png"
+                    alt="Concrete 3D Printing Buildability Experimental Testing and Numerical Validation"
+                    class="img-fluid rounded-4 shadow-sm w-100 printing-main-image"
+                >
+
+            </div>
+
+
+            <!-- Project Description -->
+            <div class="col-lg-5">
+
+                <span class="badge text-bg-primary mb-3">
+                    PhD Research
+                </span>
+
+                <h3 class="fw-bold mb-3">
+                    From Material Extrusion to Structural Stability
+                </h3>
+
+                <p class="text-secondary">
+                    My PhD research investigated one of the central
+                    challenges in concrete 3D printing: developing a
+                    material that can be continuously extruded while
+                    gaining sufficient early-age strength and stiffness
+                    to support successive printed layers.
+                </p>
+
+                <p class="text-secondary">
+                    The work combined experimental testing with
+                    numerical modelling to understand material flow,
+                    layer stability, deformation and structural failure
+                    during additive manufacturing.
+                </p>
+
+
+                <h4 class="h6 fw-bold mt-4">
+                    Research areas
+                </h4>
+
+                <ul class="text-secondary ps-3">
+
+                    <li class="mb-2">
+                        Fresh-state rheology and yield stress.
+                    </li>
+
+                    <li class="mb-2">
+                        Concrete extrudability and material flow.
+                    </li>
+
+                    <li class="mb-2">
+                        Layer-by-layer buildability.
+                    </li>
+
+                    <li class="mb-2">
+                        Early-age structural behaviour.
+                    </li>
+
+                    <li class="mb-2">
+                        Experimental failure investigation.
+                    </li>
+
+                    <li>
+                        Numerical modelling and experimental validation.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             BUILDABILITY INVESTIGATION
+        ====================================================== -->
+        <div class="row align-items-center g-5 mb-5 pb-5 border-bottom">
+
+
+            <!-- Description -->
+            <div class="col-lg-5 order-2 order-lg-1">
+
+                <span class="badge text-bg-dark mb-3">
+                    Experimental + Numerical
+                </span>
+
+                <h3 class="fw-bold mb-3">
+                    Buildability Investigation
+                </h3>
+
+                <p class="text-secondary">
+                    Buildability describes the ability of freshly
+                    printed concrete layers to support their own
+                    weight and the increasing load imposed by
+                    subsequent layers without excessive deformation
+                    or collapse.
+                </p>
+
+
+                <h4 class="h6 fw-bold mt-4">
+                    Experimental investigation
+                </h4>
+
+                <ul class="text-secondary ps-3">
+
+                    <li class="mb-2">
+                        Layer-by-layer printing of concrete elements.
+                    </li>
+
+                    <li class="mb-2">
+                        Monitoring deformation as printed height increased.
+                    </li>
+
+                    <li class="mb-2">
+                        Identification of shear-type and stability failure.
+                    </li>
+
+                    <li>
+                        Determination of practical buildability limits.
+                    </li>
+
+                </ul>
+
+
+                <h4 class="h6 fw-bold mt-4">
+                    Numerical investigation
+                </h4>
+
+                <p class="text-secondary">
+                    Numerical modelling using the
+                    <strong>Finite Difference Method (FDM)</strong>
+                    was used to simulate the progressively increasing
+                    printed structure and predict stress development,
+                    deformation and failure.
+                </p>
+
+
+                <div class="card border-0 bg-light rounded-4 mt-4">
+
+                    <div class="card-body">
+
+                        <p class="small text-uppercase fw-bold text-primary mb-2">
+                            Key objective
+                        </p>
+
+                        <p class="mb-0 text-secondary">
+                            Predict when and how a printed element
+                            becomes structurally unstable as additional
+                            concrete layers are deposited.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- PLAYABLE BUILDABILITY VIDEO -->
+            <div class="col-lg-7 order-1 order-lg-2">
+
+                <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+
+                    <div class="card-header bg-primary text-white border-0 py-3">
+
+                        <h4 class="h5 fw-bold mb-0">
+                            Buildability: Experimental vs Numerical
+                        </h4>
+
+                    </div>
+
+                    <div class="card-body p-0 bg-black">
+
+                        <video
+                            class="w-100 printing-video"
+                            controls
+                            preload="metadata"
+                            playsinline
+                        >
+
+                            <source
+                                src="images/projects/3dprinting/buildability.mp4"
+                                type="video/mp4"
+                            >
+
+                            Your browser does not support HTML5 video.
+
+                        </video>
+
+                    </div>
+
+                    <div class="card-footer bg-white border-0 p-3">
+
+                        <p class="small text-secondary mb-0">
+                            Experimental buildability behaviour compared
+                            with numerical simulation using the
+                            Finite Difference Method (FDM).
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             EXTRUDABILITY INVESTIGATION
+        ====================================================== -->
+        <div class="row align-items-center g-5 mb-5 pb-5 border-bottom">
+
+
+            <!-- PLAYABLE EXTRUDABILITY VIDEO -->
+            <div class="col-lg-7">
+
+                <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+
+                    <div class="card-header bg-primary text-white border-0 py-3">
+
+                        <h4 class="h5 fw-bold mb-0">
+                            Extrudability: Experimental vs DEM Simulation
+                        </h4>
+
+                    </div>
+
+                    <div class="card-body p-0 bg-black">
+
+                        <video
+                            class="w-100 printing-video"
+                            controls
+                            preload="metadata"
+                            playsinline
+                        >
+
+                            <source
+                                src="images/projects/3dprinting/DEM.mp4"
+                                type="video/mp4"
+                            >
+
+                            Your browser does not support HTML5 video.
+
+                        </video>
+
+                    </div>
+
+                    <div class="card-footer bg-white border-0 p-3">
+
+                        <p class="small text-secondary mb-0">
+                            Experimental concrete extrusion compared
+                            with numerical particle-flow simulation
+                            using the Discrete Element Method (DEM).
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Description -->
+            <div class="col-lg-5">
+
+                <span class="badge text-bg-primary mb-3">
+                    Material Flow
+                </span>
+
+                <h3 class="fw-bold mb-3">
+                    Extrudability Investigation
+                </h3>
+
+                <p class="text-secondary">
+                    Extrudability represents the ability of the
+                    fresh concrete to move through the delivery
+                    system and nozzle while producing a continuous,
+                    dimensionally stable filament without blockage,
+                    tearing or excessive deformation.
+                </p>
+
+
+                <h4 class="h6 fw-bold mt-4">
+                    Experimental investigation
+                </h4>
+
+                <ul class="text-secondary ps-3">
+
+                    <li class="mb-2">
+                        Controlled extrusion through the printing nozzle.
+                    </li>
+
+                    <li class="mb-2">
+                        Assessment of continuous material flow.
+                    </li>
+
+                    <li class="mb-2">
+                        Evaluation of filament geometry and stability.
+                    </li>
+
+                    <li>
+                        Observation of material flow and bulging behaviour.
+                    </li>
+
+                </ul>
+
+
+                <h4 class="h6 fw-bold mt-4">
+                    Numerical investigation
+                </h4>
+
+                <p class="text-secondary">
+                    The
+                    <strong>Discrete Element Method (DEM)</strong>
+                    was used to investigate particle-level material
+                    flow through the extrusion system and reproduce
+                    the behaviour observed experimentally.
+                </p>
+
+
+                <div class="card border-0 bg-light rounded-4 mt-4">
+
+                    <div class="card-body">
+
+                        <p class="small text-uppercase fw-bold text-primary mb-2">
+                            Key objective
+                        </p>
+
+                        <p class="mb-0 text-secondary">
+                            Understand how material behaviour,
+                            extrusion rate and nozzle conditions
+                            influence the consistency and geometry
+                            of the printed filament.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             EXPERIMENTAL + NUMERICAL WORKFLOW
+        ====================================================== -->
+        <div class="text-center mb-4">
+
+            <h3 class="fw-bold">
+                Integrated Research Approach
+            </h3>
+
+            <p class="text-secondary">
+                Combining experiments, material behaviour and
+                numerical analysis to understand the complete
+                concrete 3D printing process.
+            </p>
+
+        </div>
+
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mb-5">
+
+
+            <!-- Material -->
+            <div class="col">
+
+                <div class="card h-100 border-0 bg-light rounded-4 text-center">
+
+                    <div class="card-body p-4">
+
+                        <div class="display-6 mb-3">
+                            01
+                        </div>
+
+                        <h4 class="h5 fw-bold">
+                            Material Behaviour
+                        </h4>
+
+                        <p class="small text-secondary mb-0">
+                            Rheology, yield stress and
+                            fresh-state characteristics.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Extrusion -->
+            <div class="col">
+
+                <div class="card h-100 border-0 bg-light rounded-4 text-center">
+
+                    <div class="card-body p-4">
+
+                        <div class="display-6 mb-3">
+                            02
+                        </div>
+
+                        <h4 class="h5 fw-bold">
+                            Extrudability
+                        </h4>
+
+                        <p class="small text-secondary mb-0">
+                            Material flow, nozzle behaviour
+                            and filament formation.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Buildability -->
+            <div class="col">
+
+                <div class="card h-100 border-0 bg-light rounded-4 text-center">
+
+                    <div class="card-body p-4">
+
+                        <div class="display-6 mb-3">
+                            03
+                        </div>
+
+                        <h4 class="h5 fw-bold">
+                            Buildability
+                        </h4>
+
+                        <p class="small text-secondary mb-0">
+                            Layer stability, deformation
+                            and structural failure.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Simulation -->
+            <div class="col">
+
+                <div class="card h-100 border-0 bg-light rounded-4 text-center">
+
+                    <div class="card-body p-4">
+
+                        <div class="display-6 mb-3">
+                            04
+                        </div>
+
+                        <h4 class="h5 fw-bold">
+                            Numerical Validation
+                        </h4>
+
+                        <p class="small text-secondary mb-0">
+                            FDM and DEM simulations
+                            validated against experiments.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             RESEARCH SUMMARY
+        ====================================================== -->
+        <div class="row justify-content-center mt-5">
+
+            <div class="col-lg-10">
+
+                <div class="card border-0 bg-light rounded-4">
+
+                    <div class="card-body p-4 p-lg-5">
+
+                        <div class="row text-center g-4">
+
+
+                            <div class="col-12 col-md-4">
+
+                                <h3 class="display-6 fw-bold text-primary">
+                                    Experimental
+                                </h3>
+
+                                <p class="mb-0 text-secondary">
+                                    Large-scale printing and
+                                    fresh-state testing
+                                </p>
+
+                            </div>
+
+
+                            <div class="col-12 col-md-4">
+
+                                <h3 class="display-6 fw-bold text-primary">
+                                    FDM
+                                </h3>
+
+                                <p class="mb-0 text-secondary">
+                                    Buildability and
+                                    structural failure analysis
+                                </p>
+
+                            </div>
+
+
+                            <div class="col-12 col-md-4">
+
+                                <h3 class="display-6 fw-bold text-primary">
+                                    DEM
+                                </h3>
+
+                                <p class="mb-0 text-secondary">
+                                    Extrudability and
+                                    material-flow simulation
+                                </p>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             BACK TO PROJECTS
+        ====================================================== -->
+        <div class="text-center mt-5">
+
+            <a
+                href="#projects"
+                class="btn btn-outline-dark rounded-pill px-4 py-2"
+            >
+                ← Back to Projects
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+<!-- END CONCRETE 3D PRINTING SECTION -->
+
+<!-- =========================================================
+     SUSTAINABLE RECYCLED MATERIALS FOR CONSTRUCTION
+========================================================== -->
+<section id="sustainable-materials" class="py-5 bg-light">
+
+    <div class="container py-5">
+
+
+        <!-- =====================================================
+             SECTION INTRODUCTION
+        ====================================================== -->
+        <div class="row justify-content-center mb-5">
+
+            <div class="col-lg-9 text-center">
+
+                <p class="text-uppercase fw-semibold text-secondary mb-2">
+                    RMIT Research & Sustainable Construction
+                </p>
+
+                <h2 class="display-3 fw-bold text-dark mb-3">
+                    Sustainable Recycled Materials for Construction
+                </h2>
+
+                <p class="lead text-secondary">
+                    Research focused on converting low-grade natural
+                    and waste materials into practical supplementary
+                    cementitious materials for lower-carbon concrete,
+                    supported by advanced laboratory and synchrotron
+                    characterisation.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             MAIN RESEARCH INFOGRAPHIC
+        ====================================================== -->
+        <div class="row justify-content-center mb-5">
+
+            <div class="col-lg-11">
+
+                <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+
+                    <img
+                        src="images/projects/RMIT/1.png"
+                        alt="Sustainable recycled materials for construction research"
+                        class="img-fluid w-100 sustainable-main-image"
+                    >
+
+                    <div class="card-body p-4">
+
+                        <h3 class="h4 fw-bold mb-3">
+                            From Low-Grade Resources to Low-Carbon Concrete
+                        </h3>
+
+                        <p class="text-secondary mb-0">
+                            The research combines material activation,
+                            concrete performance testing, microstructural
+                            analysis and synchrotron X-ray techniques to
+                            understand how Australian natural and waste clays
+                            can be transformed into useful supplementary
+                            cementitious materials.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+      <!-- =====================================================
+     MEDIA RELEASE & RESEARCH IMPACT
+====================================================== -->
+<div class="row align-items-center g-5 mb-5 pb-5 border-bottom">
+
+
+    <!-- Media Coverage Image -->
+    <div class="col-lg-7">
+
+        <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+
+            <img
+                src="images/projects/RMIT/News.png"
+                alt="Media coverage of RMIT low-grade clay research for low-carbon concrete"
+                class="img-fluid w-100 sustainable-media-image"
+            >
+
+            <div class="card-body bg-white p-3">
+
+                <p class="small text-secondary mb-0">
+                    Selected media coverage highlighting the RMIT research
+                    on converting low-grade clay into a supplementary
+                    cementitious material for lower-carbon concrete.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Media Release Description -->
+    <div class="col-lg-5">
+
+        <span class="badge text-bg-danger mb-3">
+            Research Impact & Media
+        </span>
+
+        <h3 class="fw-bold mb-3">
+            Common Low-Grade Clay Strengthens
+            Low-Carbon Concrete
+        </h3>
+
+        <p class="text-secondary">
+            My RMIT research investigated the potential of abundant
+            Australian low-grade and waste clays as supplementary
+            cementitious materials for reducing the environmental
+            impact of concrete.
+        </p>
+
+        <p class="text-secondary">
+            The research demonstrated that appropriate activation of
+            low-grade clay can improve its suitability for use in
+            cementitious systems, creating an opportunity to utilise
+            locally available materials that may otherwise have limited
+            commercial value.
+        </p>
+
+        <p class="text-secondary">
+            The findings attracted attention across construction and
+            materials-industry media, helping communicate the broader
+            potential of calcined-clay technology for lower-carbon and
+            more resource-efficient construction.
+        </p>
+
+
+        <!-- Main RMIT Media Release Link -->
+        <a
+            href="https://www.rmit.edu.au/news/all-news/2025/jun/calcined-clay"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-danger rounded-pill px-4 py-2 mt-2"
+        >
+            Read the RMIT Media Release ↗
+        </a>
+
+
+        <!-- Research Impact Highlights -->
+        <div class="card border-0 bg-white rounded-4 mt-4">
+
+            <div class="card-body p-4">
+
+                <p class="small text-uppercase fw-bold text-primary mb-3">
+                    Research Significance
+                </p>
+
+                <div class="d-flex align-items-start mb-3">
+
+                    <div class="me-3 fw-bold text-primary">
+                        01
+                    </div>
+
+                    <div>
+                        <strong>
+                            Low-grade resource utilisation
+                        </strong>
+
+                        <p class="small text-secondary mb-0">
+                            Creates potential value from abundant
+                            natural and waste clay resources.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="d-flex align-items-start mb-3">
+
+                    <div class="me-3 fw-bold text-primary">
+                        02
+                    </div>
+
+                    <div>
+                        <strong>
+                            Lower-carbon cementitious materials
+                        </strong>
+
+                        <p class="small text-secondary mb-0">
+                            Supports partial replacement of
+                            conventional Portland cement.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="d-flex align-items-start">
+
+                    <div class="me-3 fw-bold text-primary">
+                        03
+                    </div>
+
+                    <div>
+                        <strong>
+                            Industry and societal impact
+                        </strong>
+
+                        <p class="small text-secondary mb-0">
+                            Contributes to more circular and
+                            resource-efficient construction.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- END MEDIA RELEASE & RESEARCH IMPACT -->
+
+
+
+        <!-- =====================================================
+             ESRF FACILITY
+        ====================================================== -->
+        <div class="row align-items-center g-5 mb-5 pb-5 border-bottom">
+
+            <!-- ESRF Photo -->
+            <div class="col-lg-7">
+
+                <img
+                    src="images/projects/RMIT/ESRF.png"
+                    alt="European Synchrotron Radiation Facility ESRF Grenoble France"
+                    class="img-fluid rounded-4 shadow-sm w-100 sustainable-feature-image"
+                >
+
+            </div>
+
+
+            <!-- ESRF Description -->
+            <div class="col-lg-5">
+
+                <span class="badge text-bg-primary mb-3">
+                    International Research Facility
+                </span>
+
+                <h3 class="fw-bold mb-3">
+                    European Synchrotron Radiation Facility
+                </h3>
+
+                <p class="text-secondary">
+                    The European Synchrotron Radiation Facility
+                    (ESRF) in Grenoble, France, provides high-brilliance
+                    X-ray beamlines that enable investigation of
+                    cementitious materials from atomic-scale structure
+                    through to three-dimensional microstructure.
+                </p>
+
+                <p class="text-secondary">
+                    As part of my RMIT research, synchrotron experiments
+                    were used to investigate calcined-clay activation,
+                    hydration behaviour, structural disorder and
+                    microstructural evolution in cementitious systems.
+                </p>
+
+                <p class="small text-secondary mb-0">
+                    The experimental program complemented conventional
+                    laboratory testing with advanced X-ray
+                    characterisation unavailable through standard
+                    laboratory instruments.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             SYNCHROTRON TECHNIQUES
+        ====================================================== -->
+        <div class="text-center mb-4">
+
+            <h3 class="fw-bold">
+                Multi-Scale Synchrotron Characterisation
+            </h3>
+
+            <p class="text-secondary">
+                Different ESRF beamlines were used to investigate
+                material structure from three-dimensional microstructure
+                to crystalline and local atomic-scale behaviour.
+            </p>
+
+        </div>
+
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+
+
+             <!-- =====================================================
+         ID19
+    ====================================================== -->
+    <div class="col">
+
+        <div class="card h-100 border-0 bg-white rounded-4 shadow-sm beamline-card">
+
+            <div class="card-body p-4">
+
+                <p class="small fw-bold text-primary text-uppercase mb-2">
+                    ESRF ID19
+                </p>
+
+                <h4 class="h4 fw-bold mb-3">
+                    X-ray Micro-CT
+                </h4>
+
+
+                <!-- ORIGINAL ID19 EXPERIMENT IMAGE -->
+                <div class="beamline-image-wrapper mb-4">
+
+                    <img
+                        src="images/projects/RMIT/ID19.png"
+                        alt="Original ESRF ID19 synchrotron X-ray micro-CT experimental setup"
+                        class="beamline-experiment-image"
+                    >
+
+                </div>
+
+
+                <p class="text-secondary">
+                    High-resolution synchrotron X-ray computed
+                    tomography was used to investigate internal
+                    three-dimensional microstructure, including
+                    clinker, hydration products, pores and
+                    material heterogeneity.
+                </p>
+
+
+                <p class="small text-secondary mb-0">
+                    <strong>Scale:</strong>
+                    Microstructure / 3D volume
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         ID22
+    ====================================================== -->
+    <div class="col">
+
+        <div class="card h-100 border-0 bg-white rounded-4 shadow-sm beamline-card">
+
+            <div class="card-body p-4">
+
+                <p class="small fw-bold text-primary text-uppercase mb-2">
+                    ESRF ID22
+                </p>
+
+                <h4 class="h4 fw-bold mb-3">
+                    High-Resolution XRD & PDF Analysis
+                </h4>
+
+
+                <!-- ORIGINAL ID22 EXPERIMENT IMAGE -->
+                <div class="beamline-image-wrapper mb-4">
+
+                    <img
+                        src="images/projects/RMIT/ID22.png"
+                        alt="Original ESRF ID22 high-resolution XRD and PDF experimental setup"
+                        class="beamline-experiment-image"
+                    >
+
+                </div>
+
+
+                <p class="text-secondary">
+                    In-situ high-energy X-ray diffraction and
+                    Pair Distribution Function analysis were used
+                    to investigate crystalline and amorphous phase
+                    evolution during cement hydration, providing
+                    insight into mineral transformations and
+                    reaction processes.
+                </p>
+
+
+                <p class="small text-secondary mb-0">
+                    <strong>Scale:</strong>
+                    Crystalline and amorphous phase evolution
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         ID31
+    ====================================================== -->
+    <div class="col">
+
+        <div class="card h-100 border-0 bg-white rounded-4 shadow-sm beamline-card">
+
+            <div class="card-body p-4">
+
+                <p class="small fw-bold text-primary text-uppercase mb-2">
+                    ESRF ID31
+                </p>
+
+                <h4 class="h4 fw-bold mb-3">
+                    Fast XRD & PDF Analysis
+                </h4>
+
+
+                <!-- ORIGINAL ID31 EXPERIMENT IMAGE -->
+                <div class="beamline-image-wrapper mb-4">
+
+                    <img
+                        src="images/projects/RMIT/ID31.png"
+                        alt="Original ESRF ID31 fast XRD and PDF experimental setup"
+                        class="beamline-experiment-image"
+                    >
+
+                </div>
+
+
+                <p class="text-secondary">
+                    High-energy X-ray diffraction together with
+                    Pair Distribution Function (PDF) analysis was
+                    used to examine crystalline phases and local /
+                    medium-range atomic structure during clay
+                    calcination.
+                </p>
+
+
+                <p class="small text-secondary mb-0">
+                    <strong>Scale:</strong>
+                    Crystalline + local atomic structure
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+        <!-- =====================================================
+             IMPORTANT CAPTION / CORRECTION
+        ====================================================== -->
+        <div class="row justify-content-center mb-5">
+
+            <div class="col-lg-10">
+
+                <div class="alert alert-primary border-0 rounded-4 mb-0">
+
+                    <strong>
+                        Synchrotron technique clarification:
+                    </strong>
+
+                    ID19 was used for synchrotron X-ray micro-CT,
+                    ID22 for high-resolution XRD/PDF, and ID31 for fast XRD/PDF
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             RESEARCH WORKFLOW
+        ====================================================== -->
+        <div class="text-center mb-4">
+
+            <h3 class="fw-bold">
+                Research Workflow
+            </h3>
+
+            <p class="text-secondary">
+                Linking raw-material characteristics with activation,
+                concrete performance and advanced structural analysis.
+            </p>
+
+        </div>
+
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mb-5">
+
+
+            <div class="col">
+
+                <div class="card h-100 border-0 bg-white rounded-4 text-center">
+
+                    <div class="card-body p-4">
+
+                        <div class="display-6 fw-bold text-primary mb-3">
+                            01
+                        </div>
+
+                        <h4 class="h5 fw-bold">
+                            Material Selection
+                        </h4>
+
+                        <p class="small text-secondary mb-0">
+                            Natural and waste clays selected and
+                            characterised for potential SCM use.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col">
+
+                <div class="card h-100 border-0 bg-white rounded-4 text-center">
+
+                    <div class="card-body p-4">
+
+                        <div class="display-6 fw-bold text-primary mb-3">
+                            02
+                        </div>
+
+                        <h4 class="h5 fw-bold">
+                            Activation
+                        </h4>
+
+                        <p class="small text-secondary mb-0">
+                            Calcination and mechanical activation
+                            used to improve material reactivity.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col">
+
+                <div class="card h-100 border-0 bg-white rounded-4 text-center">
+
+                    <div class="card-body p-4">
+
+                        <div class="display-6 fw-bold text-primary mb-3">
+                            03
+                        </div>
+
+                        <h4 class="h5 fw-bold">
+                            Concrete Performance
+                        </h4>
+
+                        <p class="small text-secondary mb-0">
+                            Mechanical, durability, hydration
+                            and fresh-state behaviour assessed.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col">
+
+                <div class="card h-100 border-0 bg-white rounded-4 text-center">
+
+                    <div class="card-body p-4">
+
+                        <div class="display-6 fw-bold text-primary mb-3">
+                            04
+                        </div>
+
+                        <h4 class="h5 fw-bold">
+                            Advanced Analysis
+                        </h4>
+
+                        <p class="small text-secondary mb-0">
+                            XRD, PDF and synchrotron CT used
+                            to explain material behaviour.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             RESEARCH OUTCOMES
+        ====================================================== -->
+        <div class="row justify-content-center mt-5">
+
+            <div class="col-lg-10">
+
+                <div class="card border-0 bg-white rounded-4">
+
+                    <div class="card-body p-4 p-lg-5">
+
+                        <div class="row text-center g-4">
+
+
+                            <div class="col-12 col-md-3">
+
+                                <h3 class="h3 fw-bold text-primary">
+                                    Low Carbon
+                                </h3>
+
+                                <p class="mb-0 text-secondary">
+                                    Reduced clinker demand
+                                </p>
+
+                            </div>
+
+
+                            <div class="col-12 col-md-3">
+
+                                <h3 class="h3 fw-bold text-primary">
+                                    Circular
+                                </h3>
+
+                                <p class="mb-0 text-secondary">
+                                    Utilisation of waste
+                                    and low-grade resources
+                                </p>
+
+                            </div>
+
+
+                            <div class="col-12 col-md-3">
+
+                                <h3 class="h3 fw-bold text-primary">
+                                    Advanced
+                                </h3>
+
+                                <p class="mb-0 text-secondary">
+                                    Multi-scale material
+                                    characterisation
+                                </p>
+
+                            </div>
+
+
+                            <div class="col-12 col-md-3">
+
+                                <h3 class="h3 fw-bold text-primary">
+                                    Practical
+                                </h3>
+
+                                <p class="mb-0 text-secondary">
+                                    Construction-material
+                                    applications
+                                </p>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             BACK TO PROJECTS
+        ====================================================== -->
+        <div class="text-center mt-5">
+
+            <a
+                href="#projects"
+                class="btn btn-outline-dark rounded-pill px-4 py-2"
+            >
+                ← Back to Projects
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+<!-- END SUSTAINABLE MATERIALS SECTION -->
+<!-- =========================================================
+     END-OF-LIFE TYRE BASED CONCRETE NOISE PANELS
+========================================================== -->
+<section id="noise-panels" class="py-5 bg-white">
+
+    <div class="container py-5">
+
+
+        <!-- =====================================================
+             SECTION INTRODUCTION
+        ====================================================== -->
+        <div class="row justify-content-center mb-5">
+
+            <div class="col-lg-9 text-center">
+
+                <p class="text-uppercase fw-semibold text-secondary mb-2">
+                    UNSW Research & Sustainable Infrastructure
+                </p>
+
+                <h2 class="display-3 fw-bold text-dark mb-3">
+                    End-of-Life Tyre Based Concrete Noise Panels
+                </h2>
+
+                <p class="lead text-secondary">
+                    Industry-linked research focused on developing
+                    sustainable precast concrete noise-barrier materials
+                    incorporating end-of-life tyre rubber, recycled glass
+                    and other recycled constituents for transport
+                    infrastructure applications.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             PROJECT OVERVIEW
+        ====================================================== -->
+        <div class="row align-items-center g-5 mb-5 pb-5 border-bottom">
+
+            <!-- Main project image -->
+            <div class="col-lg-7">
+
+                <img
+                    src="images/projects/UNSW/summary.png"
+                    alt="End-of-life tyre based concrete noise panel UNSW research project"
+                    class="img-fluid rounded-4 shadow-sm w-100 tyre-project-image"
+                >
+
+            </div>
+
+
+            <!-- Project description -->
+            <div class="col-lg-5">
+
+                <span class="badge text-bg-primary mb-3">
+                    Sustainable Precast Infrastructure
+                </span>
+
+                <h3 class="fw-bold mb-3">
+                    From Waste Tyres to Infrastructure Products
+                </h3>
+
+                <p class="text-secondary">
+                    The project investigated how end-of-life tyre rubber
+                    and recycled constituents could be incorporated into
+                    concrete for precast traffic noise-wall applications
+                    while maintaining the engineering performance required
+                    for practical infrastructure use.
+                </p>
+
+                <p class="text-secondary">
+                    My role covered material development, concrete
+                    production, testing, data interpretation, industry
+                    engagement and assessment of engineering performance
+                    against transport-infrastructure requirements.
+                </p>
+
+
+                <h4 class="h6 fw-bold mt-4">
+                    Key research areas
+                </h4>
+
+                <ul class="text-secondary ps-3">
+
+                    <li class="mb-2">
+                        End-of-life tyre rubber concrete.
+                    </li>
+
+                    <li class="mb-2">
+                        Recycled glass, manufactured sand and
+                        recycled aggregate utilisation.
+                    </li>
+
+                    <li class="mb-2">
+                        Precast noise-barrier applications.
+                    </li>
+
+                    <li class="mb-2">
+                        Mechanical, durability and acoustic performance.
+                    </li>
+
+                    <li>
+                        Industry validation and prototype development.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             MATERIAL DEVELOPMENT & TESTING
+        ====================================================== -->
+        <div class="row align-items-center g-5 mb-5 pb-5 border-bottom">
+
+            <!-- Description -->
+            <div class="col-lg-5 order-2 order-lg-1">
+
+                <span class="badge text-bg-dark mb-3">
+                    Material Development
+                </span>
+
+                <h3 class="fw-bold mb-3">
+                    Mix Design, Testing & Validation
+                </h3>
+
+                <p class="text-secondary">
+                    A systematic experimental program was used to develop
+                    recycled-material concrete mixes and evaluate their
+                    suitability for precast noise-wall manufacturing.
+                </p>
+
+
+                <h4 class="h6 fw-bold mt-4">
+                    Experimental activities
+                </h4>
+
+                <ul class="text-secondary ps-3">
+
+                    <li class="mb-2">
+                        Trial batching and optimisation of concrete mixes.
+                    </li>
+
+                    <li class="mb-2">
+                        Fresh-state and workability assessment.
+                    </li>
+
+                    <li class="mb-2">
+                        Preparation and controlled curing of specimens.
+                    </li>
+
+                    <li class="mb-2">
+                        Compressive, flexural and other mechanical testing.
+                    </li>
+
+                    <li class="mb-2">
+                        Durability and microstructural characterisation.
+                    </li>
+
+                    <li>
+                        Acoustic-performance assessment for noise-barrier use.
+                    </li>
+
+                </ul>
+
+
+                <div class="card border-0 bg-light rounded-4 mt-4">
+
+                    <div class="card-body p-4">
+
+                        <p class="small text-uppercase fw-bold text-primary mb-2">
+                            Engineering Challenge
+                        </p>
+
+                        <p class="text-secondary mb-0">
+                            Increasing rubber content can reduce early-age
+                            concrete strength. The research therefore examined
+                            early strength development and mix behaviour to
+                            support safe stripping of precast elements and
+                            improve manufacturing efficiency.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Testing image -->
+            <div class="col-lg-7 order-1 order-lg-2">
+
+                <img
+                    src="images/projects/UNSW/testing.png"
+                    alt="Recycled tyre concrete material development testing and validation"
+                    class="img-fluid rounded-4 shadow-sm w-100 tyre-project-image"
+                >
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             PRECAST PRODUCT & ENGINEERING VALIDATION
+        ====================================================== -->
+        <div class="row justify-content-center mb-5">
+
+            <div class="col-lg-10">
+
+                <div class="text-center mb-4">
+
+                    <span class="badge text-bg-primary mb-3">
+                        Engineering Performance
+                    </span>
+
+                    <h3 class="fw-bold">
+                        From Laboratory Mix to Precast Product
+                    </h3>
+
+                    <p class="text-secondary">
+                        The research extended beyond material strength to
+                        consider the practical requirements of manufacturing,
+                        lifting, service performance and transport-infrastructure
+                        application.
+                    </p>
+
+                </div>
+
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+
+                    <!-- Early strength -->
+                    <div class="col">
+
+                        <div class="card h-100 border-0 bg-light rounded-4 text-center">
+
+                            <div class="card-body p-4">
+
+                                <div class="display-6 fw-bold text-primary mb-3">
+                                    01
+                                </div>
+
+                                <h4 class="h5 fw-bold">
+                                    Early-Age Strength
+                                </h4>
+
+                                <p class="small text-secondary mb-0">
+                                    Assessment of strength development
+                                    to support precast stripping and
+                                    manufacturing cycles.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Lifting -->
+                    <div class="col">
+
+                        <div class="card h-100 border-0 bg-light rounded-4 text-center">
+
+                            <div class="card-body p-4">
+
+                                <div class="display-6 fw-bold text-primary mb-3">
+                                    02
+                                </div>
+
+                                <h4 class="h5 fw-bold">
+                                    Lifting Safety
+                                </h4>
+
+                                <p class="small text-secondary mb-0">
+                                    Anchor pull-out testing to evaluate
+                                    safe lifting of precast noise-wall
+                                    panels.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Performance -->
+                    <div class="col">
+
+                        <div class="card h-100 border-0 bg-light rounded-4 text-center">
+
+                            <div class="card-body p-4">
+
+                                <div class="display-6 fw-bold text-primary mb-3">
+                                    03
+                                </div>
+
+                                <h4 class="h5 fw-bold">
+                                    Service Performance
+                                </h4>
+
+                                <p class="small text-secondary mb-0">
+                                    Mechanical, durability and acoustic
+                                    performance considered for practical
+                                    infrastructure use.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Specifications -->
+                    <div class="col">
+
+                        <div class="card h-100 border-0 bg-light rounded-4 text-center">
+
+                            <div class="card-body p-4">
+
+                                <div class="display-6 fw-bold text-primary mb-3">
+                                    04
+                                </div>
+
+                                <h4 class="h5 fw-bold">
+                                    Specifications
+                                </h4>
+
+                                <p class="small text-secondary mb-0">
+                                    Material performance considered
+                                    against TfNSW, TMR and Austroads
+                                    requirements.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             INDUSTRY COLLABORATION & PROTOTYPE
+        ====================================================== -->
+        <div class="row align-items-center g-5 mb-5 pb-5 border-bottom">
+
+            <!-- Industry image -->
+            <div class="col-lg-7">
+
+                <img
+                    src="images/projects/UNSW/IP.png"
+                    alt="UNSW recycled tyre concrete prototype industry collaboration"
+                    class="img-fluid rounded-4 shadow-sm w-100 tyre-project-image"
+                >
+
+            </div>
+
+
+            <!-- Description -->
+            <div class="col-lg-5">
+
+                <span class="badge text-bg-primary mb-3">
+                    Industry Collaboration
+                </span>
+
+                <h3 class="fw-bold mb-3">
+                    Prototype Development & Industry Engagement
+                </h3>
+
+                <p class="text-secondary">
+                    The project was delivered with strong industry
+                    engagement, linking university research with
+                    commercial knowledge and real-world infrastructure
+                    requirements.
+                </p>
+
+                <p class="text-secondary">
+                    A recycled-rubber concrete prototype was presented
+                    with industry partner Flexiroc, demonstrating how
+                    experimental material development could be translated
+                    toward practical precast noise-barrier products.
+                </p>
+
+
+                <h4 class="h6 fw-bold mt-4">
+                    Collaboration included
+                </h4>
+
+                <ul class="text-secondary ps-3">
+                    <li class="mb-2">
+                        Australian Research Council (ARC)
+                    </li>
+
+                    <li class="mb-2">
+                        Tyre Stewardship Australia.
+                    </li>
+
+                    <li class="mb-2">
+                        Holcim.
+                    </li>
+
+                    <li class="mb-2">
+                        Flexiroc.
+                    </li>
+
+                    <li>
+                        GC Civil.
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             SUSTAINABILITY & APPLICATION
+        ====================================================== -->
+        <div class="row justify-content-center mb-5">
+
+            <div class="col-lg-10">
+
+                <div class="card border-0 bg-light rounded-4">
+
+                    <div class="card-body p-4 p-lg-5">
+
+                        <div class="text-center mb-4">
+
+                            <h3 class="fw-bold">
+                                Potential Impact
+                            </h3>
+
+                            <p class="text-secondary mb-0">
+                                Turning a difficult waste stream into
+                                functional construction materials.
+                            </p>
+
+                        </div>
+
+
+                        <div class="row text-center g-4">
+
+
+                            <div class="col-12 col-md-3">
+
+                                <h4 class="h3 fw-bold text-primary">
+                                    Waste
+                                </h4>
+
+                                <p class="text-secondary mb-0">
+                                    Diverts end-of-life tyres
+                                    from landfill
+                                </p>
+
+                            </div>
+
+
+                            <div class="col-12 col-md-3">
+
+                                <h4 class="h3 fw-bold text-primary">
+                                    Circular
+                                </h4>
+
+                                <p class="text-secondary mb-0">
+                                    Creates second-life value
+                                    from recycled materials
+                                </p>
+
+                            </div>
+
+
+                            <div class="col-12 col-md-3">
+
+                                <h4 class="h3 fw-bold text-primary">
+                                    Precast
+                                </h4>
+
+                                <p class="text-secondary mb-0">
+                                    Supports practical
+                                    infrastructure products
+                                </p>
+
+                            </div>
+
+
+                            <div class="col-12 col-md-3">
+
+                                <h4 class="h3 fw-bold text-primary">
+                                    Quieter
+                                </h4>
+
+                                <p class="text-secondary mb-0">
+                                    Supports more liveable
+                                    transport corridors
+                                </p>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             PERSONAL CONTRIBUTION
+        ====================================================== -->
+        <div class="row justify-content-center mb-5">
+
+            <div class="col-lg-9">
+
+                <div class="card border-0 bg-white shadow-sm rounded-4">
+
+                    <div class="card-body p-4 p-lg-5">
+
+                        <p class="small text-uppercase fw-bold text-primary mb-2">
+                            My Contribution
+                        </p>
+
+                        <h3 class="fw-bold mb-3">
+                            Research, Testing & Engineering Translation
+                        </h3>
+
+                        <p class="text-secondary">
+                            As a Postdoctoral Research Associate at UNSW,
+                            I contributed across the complete material-development
+                            workflow,from mix design and specimen preparation
+                            through testing, data interpretation and communication
+                            with industry partners.
+                        </p>
+
+                        <p class="text-secondary mb-0">
+                            The project strengthened my experience in translating
+                            laboratory research into practical construction-material
+                            solutions while balancing sustainability, engineering
+                            performance, manufacturing requirements and industry
+                            specifications.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             BACK TO PROJECTS
+        ====================================================== -->
+        <div class="text-center mt-5">
+
+            <a
+                href="#projects"
+                class="btn btn-outline-dark rounded-pill px-4 py-2"
+            >
+                ← Back to Projects
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+<!-- END END-OF-LIFE TYRE NOISE PANEL SECTION -->
+
+    <!-- Bootstrap JavaScript -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>
